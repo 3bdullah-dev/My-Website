@@ -544,9 +544,9 @@ span {
 @media (max-width: 617px) {
     .home-img img {
         width: 80vw;
-        margin-top: 8rem;
+        margin-top: 4rem;
         position: relative;
-        left: -70px;
+        left: -50px;
     }
     .about-img img {
         width: 80vw;
@@ -878,7 +878,7 @@ div a.nav-btn i{
 .up{
     position: fixed;
     bottom: 25px;
-    right: 60px;
+    right: 10px;
     background-color: var(--main-color);
     color: white;
     font-size: 45px;
