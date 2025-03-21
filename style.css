@@ -877,7 +877,7 @@ div a.nav-btn i{
 .up{
     position: fixed;
     bottom: 25px;
-    right: 10px;
+    right: 30px;
     background-color: var(--main-color);
     color: white;
     font-size: 45px;
