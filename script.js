@@ -51,3 +51,26 @@ span.onclick = function () {
 document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
 });
+
+Scroll Reveal Function
+function reveal() {
+  var reveals = document.querySelectorAll(
+    ".reveal, .reveal-left, .reveal-right, .reveal-rotate, .reveal-scale"
+  );
+
+  for (var i = 0; i < reveals.length; i++) {
+    var windowHeight = window.innerHeight;
+    var elementTop = reveals[i].getBoundingClientRect().top;
+    var elementVisible = 150;
+
+    if (elementTop < windowHeight - elementVisible) {
+      reveals[i].classList.add("active");
+    }
+  }
+}
+
+// Add scroll event listener
+window.addEventListener("scroll", reveal);
+
+// To check the scroll position on page load
+reveal();
