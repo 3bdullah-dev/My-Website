@@ -52,7 +52,7 @@ document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
 });
 
-Scroll Reveal Function
+
 function reveal() {
   var reveals = document.querySelectorAll(
     ".reveal, .reveal-left, .reveal-right, .reveal-rotate, .reveal-scale"
