@@ -27,11 +27,11 @@ document
     this.style.transform = "scale(1.1)";
   });
 
-document
-  .getElementById("whatsapp-button")
-  .addEventListener("mouseout", function () {
-    this.style.transform = "scale(1)";
-  });
+// document
+//   .getElementById("whatsapp-button")
+//   .addEventListener("mouseout", function () {
+//     this.style.transform = "scale(1)";
+//   });
 
 let span = document.querySelector(".up");
 
