@@ -21,11 +21,11 @@ const typed = new Typed(".multiple-text", {
   loop: true,
 });
 
-document
-  .getElementById("whatsapp-button")
-  .addEventListener("mouseover", function () {
-    this.style.transform = "scale(1.1)";
-  });
+// document
+//   .getElementById("whatsapp-button")
+//   .addEventListener("mouseover", function () {
+//     this.style.transform = "scale(1.1)";
+//   });
 
 // document
 //   .getElementById("whatsapp-button")
