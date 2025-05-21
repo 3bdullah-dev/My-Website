@@ -14,7 +14,7 @@ window.onscroll = () => {
 // Typing Text Code
 
 const typed = new Typed(".multiple-text", {
-  strings: ["Engineer", "Front-End Developer", "Video Editor"],
+  strings: ["Engineer", "Front-End Developer", "Back-End Developer"],
   typeSpeed: 45,
   backSpeed: 45,
   backDelay: 1200,
@@ -74,3 +74,5 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
+
+
