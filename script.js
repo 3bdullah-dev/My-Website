@@ -6,6 +6,14 @@ menu.onclick = () => {
   navbar.classList.toggle("active");
 };
 
+// Add click event listeners to all navigation links
+document.querySelectorAll(".navbar a").forEach((link) => {
+  link.addEventListener("click", () => {
+    menu.classList.remove("bx-x");
+    navbar.classList.remove("active");
+  });
+});
+
 window.onscroll = () => {
   menu.classList.remove("bx-x");
   navbar.classList.remove("active");
@@ -52,7 +60,6 @@ document.addEventListener("contextmenu", function (event) {
   event.preventDefault();
 });
 
-
 function reveal() {
   var reveals = document.querySelectorAll(
     ".reveal, .reveal-left, .reveal-right, .reveal-rotate, .reveal-scale"
@@ -74,5 +81,3 @@ window.addEventListener("scroll", reveal);
 
 // To check the scroll position on page load
 reveal();
-
-
