@@ -845,15 +845,19 @@ header {
   }
 
   /* Contact Form */
-  .contact form {
-    padding: 0 2rem;
+  .contact form .input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
   }
 
-  .contact form .input-box input,
+  .contact form .input-box input {
+    width: 100%;
+    margin: 0;
+  }
+
   .contact form textarea {
-    font-size: 1.8rem;
-    padding: 1.5rem;
-    margin: 1rem 0;
+    margin-top: 2rem;
   }
 
   .nav-btn {
@@ -862,40 +866,28 @@ header {
   }
 
   .navbar {
-    position: fixed;
+    position: absolute;
     top: 100%;
-    right: -100%;
+    left: -100%;
     width: 100%;
-    max-width: 300px;
-    min-height: 100vh;
-    background: rgba(0, 0, 0, 0.9);
-    -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    transition: all 0.4s ease;
-    padding: 2rem;
-    z-index: 999;
+    padding: 1rem 4%;
+    background: var(--bg-color);
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 1rem;
+    transition: 0.5s ease;
   }
 
   .navbar.active {
-    right: 0;
+    left: 0;
   }
 
   .navbar a {
     display: block;
-    width: 100%;
-    padding: 1.7rem;
-    font-size: 2.2rem;
-    margin: 0;
+    font-size: 2rem;
+    margin: 3rem 0;
     text-align: center;
-    border-bottom: 1px solid rgba(230, 126, 0, 0.1);
-  }
-
-  .navbar a:last-child {
-    border-bottom: none;
   }
 }
 
