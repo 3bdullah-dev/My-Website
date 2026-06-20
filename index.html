@@ -1,204 +1,979 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Abdullah Ahmed - مونتير فيديوهات ريلز</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <!-- Icons -->
-    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+    <!-- SEO Meta Tags -->
+    <title>Abdullah Ahmed | مونتير فيديوهات ريلز محترف - Reels Editor</title>
+    <meta
+      name="description"
+      content="Abdullah Ahmed - مونتير فيديوهات ريلز محترف، متخصص في تعديل فيديوهات الريلز والمحتوى القصير لإنستغرام وتيك توك ويوتيوب شورتس. أحوّل أفكارك إلى فيديوهات احترافية تجذب الانتباه."
+    />
+    <meta
+      name="keywords"
+      content="مونتير, مونتاج, ريلز, فيديوهات, انستغرام, تيك توك, يوتيوب شورتس, video editor, reels editor, motion designer, مونتير ريلز, تعديل فيديوهات"
+    />
+    <meta name="author" content="Abdullah Ahmed" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="Arabic" />
+    <meta name="revisit-after" content="7 days" />
 
-    <!-- Google Fonts - Cairo -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://yourwebsite.com/" />
+    <meta
+      property="og:title"
+      content="Abdullah Ahmed | مونتير فيديوهات ريلز محترف"
+    />
+    <meta
+      property="og:description"
+      content="أحوّل أفكارك إلى فيديوهات ريلز احترافية تجذب الانتباه وتحقق نتائج"
+    />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1780530199/702829367_18269276959291850_6679646237923863597_n_hdzw8l.jpg"
+    />
+    <meta property="og:locale" content="ar_EG" />
 
-    <!-- AOS Animation Library -->
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-
-    <!-- CSS -->
-    <link rel="stylesheet" href="style.css" />
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://yourwebsite.com/" />
+    <meta
+      property="twitter:title"
+      content="Abdullah Ahmed | مونتير فيديوهات ريلز محترف"
+    />
+    <meta
+      property="twitter:description"
+      content="أحوّل أفكارك إلى فيديوهات ريلز احترافية"
+    />
+    <meta
+      property="twitter:image"
+      content="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1780530199/702829367_18269276959291850_6679646237923863597_n_hdzw8l.jpg"
+    />
 
     <!-- Favicon -->
-    <link rel="icon" href="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1747903734/ChatGPT_Image_Mar_30_2025_12_09_54_AM-modified_1_aygtsw.png" />
-</head>
-<body>
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🎬%3C/text%3E%3C/svg%3E"
+    />
 
-    <!-- Header -->
-    <header>
-        <a href="#home" class="logo">Abdullah Ahmed</a>
-        <div class="bx bx-menu" id="menu-icon"></div>
-        <ul class="navbar">
-            <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#portfolio">أعمالي</a></li>
-            <li><a href="#contact">تواصل معي</a></li>
-        </ul>
-        <a href="#contact" class="nav-btn">
-            تواصل معي <i class="bx bx-message"></i>
+    <!-- Preconnect for Performance -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://cdnjs.cloudflare.com" />
+    <link rel="preconnect" href="https://unpkg.com" />
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" />
+    <link rel="preconnect" href="https://res.cloudinary.com" />
+
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      media="print"
+      onload="this.media = 'all'"
+    />
+    <noscript
+      ><link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    /></noscript>
+
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "ProfessionalService",
+        "name": "Abdullah Ahmed - Video Editor",
+        "image": "https://res.cloudinary.com/dlcwlgs9i/image/upload/v1780530199/702829367_18269276959291850_6679646237923863597_n_hdzw8l.jpg",
+        "description": "مونتير فيديوهات ريلز محترف",
+        "priceRange": "$$",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "EG"
+        },
+        "sameAs": ["https://instagram.com/yourusername"]
+      }
+    </script>
+  </head>
+  <body>
+    <!-- ============ SCROLL PROGRESS ============ -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- ============ HEADER ============ -->
+    <header id="header">
+      <div class="header-container">
+        <a href="#home" class="logo" aria-label="الصفحة الرئيسية">
+          <span class="logo-icon">🎬</span>
+          <span class="logo-text">Abdullah<span class="logo-dot">.</span></span>
         </a>
+
+        <nav aria-label="القائمة الرئيسية">
+          <ul class="navbar" id="navbar">
+            <li><a href="#home" class="nav-link active">الرئيسية</a></li>
+            <li><a href="#about" class="nav-link">من أنا</a></li>
+            <li><a href="#services" class="nav-link">خدماتي</a></li>
+            <li><a href="#portfolio" class="nav-link">أعمالي</a></li>
+            <li><a href="#process" class="nav-link">آلية العمل</a></li>
+            <li><a href="#contact" class="nav-link">تواصل معي</a></li>
+          </ul>
+        </nav>
+
+        <a href="#contact" class="nav-btn">
+          <span>ابدأ مشروعك</span>
+          <i class="fas fa-arrow-left" aria-hidden="true"></i>
+        </a>
+
+        <div
+          class="menu-icon"
+          id="menu-icon"
+          role="button"
+          aria-label="فتح القائمة"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
     </header>
 
-    <!-- Home -->
-    <section class="home" id="home">
-        <div class="home-bg-animation">
-            <div class="gradient-orb orb-1"></div>
-            <div class="gradient-orb orb-2"></div>
-            <div class="gradient-orb orb-3"></div>
+    <!-- ============ HERO SECTION ============ -->
+    <section class="hero" id="home" aria-label="القسم الرئيسي">
+      <div class="hero-bg">
+        <div class="gradient-orb orb-1" aria-hidden="true"></div>
+        <div class="gradient-orb orb-2" aria-hidden="true"></div>
+        <div class="gradient-orb orb-3" aria-hidden="true"></div>
+        <div class="grid-bg" aria-hidden="true"></div>
+        <div class="noise-overlay" aria-hidden="true"></div>
+      </div>
+
+      <div class="hero-container">
+        <div class="hero-content" data-aos="fade-up">
+          <div class="hero-badge">
+            <span class="badge-dot" aria-hidden="true"></span>
+            <span>متاح لمشاريع جديدة</span>
+          </div>
+
+          <h1 class="hero-greeting">مرحباً، أنا</h1>
+          <h2 class="hero-name">
+            <span class="name-line">Abdullah</span>
+            <span class="name-line gradient-text">Ahmed</span>
+          </h2>
+
+          <div class="hero-role">
+            <span class="role-label">أنا</span>
+            <span class="multiple-text" aria-live="polite"></span>
+            <span class="typing-cursor" aria-hidden="true">|</span>
+          </div>
+
+          <p class="hero-bio">
+            أحوّل أفكارك إلى
+            <span class="highlight">فيديوهات ريلز احترافية</span> تجذب الانتباه
+            في أول 3 ثوانٍ، وتحقق تفاعلاً عالياً على إنستغرام وتيك توك ويوتيوب
+            شورتس.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#portfolio" class="btn btn-primary">
+              <span>شاهد أعمالي</span>
+              <i class="fas fa-play" aria-hidden="true"></i>
+            </a>
+            <a href="#contact" class="btn btn-secondary">
+              <span>تواصل معي</span>
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </a>
+          </div>
+
+          <div class="hero-social">
+            <a href="#" class="social-link instagram" aria-label="Instagram">
+              <i class="fab fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link tiktok" aria-label="TikTok">
+              <i class="fab fa-tiktok" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link youtube" aria-label="YouTube">
+              <i class="fab fa-youtube" aria-hidden="true"></i>
+            </a>
+            <a href="#" class="social-link whatsapp" aria-label="WhatsApp">
+              <i class="fab fa-whatsapp" aria-hidden="true"></i>
+            </a>
+          </div>
         </div>
-        <div class="container">
-            <div class="home-content" data-aos="fade-right" data-aos-duration="1000">
-                <h3 class="greeting">مرحباً 👋</h3>
-                <h1 class="name">Abdullah <span class="gradient-text">Ahmed</span></h1>
-                <h3 class="role">أنا <span class="multiple-text"></span></h3>
-                <p class="bio">مونتير محترف متخصص في تعديل فيديوهات الريلز والمحتوى القصير لإنستغرام وتيك توك ويوتيوب شورتس</p>
 
-                <div class="social-media" data-aos="fade-up" data-aos-delay="300">
-                    <a href="https://www.instagram.com/3bdallah.pk/" target="_blank" rel="noopener noreferrer" class="social-link instagram" title="Instagram">
-                        <i class="bx bxl-instagram"></i>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=61550950064302" target="_blank" rel="noopener noreferrer" class="social-link facebook" title="Facebook">
-                        <i class="bx bxl-facebook"></i>
-                    </a>
-                    <a href="https://x.com/3bdullah_dev" target="_blank" rel="noopener noreferrer" class="social-link twitter" title="Twitter">
-                        <i class="bx bxl-twitter"></i>
-                    </a>
-                </div>
-
-                <a href="#portfolio" class="custom-btn" data-aos="fade-up" data-aos-delay="400">
-                    <span>شاهد أعمالي</span>
-                    <i class="bx bx-right-arrow-alt"></i>
-                </a>
+        <div class="hero-visual" data-aos="fade-up" data-aos-delay="200">
+          <div class="hero-image-wrapper">
+            <div class="image-glow" aria-hidden="true"></div>
+            <div class="image-ring" aria-hidden="true"></div>
+            <div class="image-ring ring-2" aria-hidden="true"></div>
+            <div class="floating-card card-1" aria-hidden="true">
+              <i class="fab fa-instagram"></i>
+              <span>Reels</span>
             </div>
-
-            <div class="home-img" data-aos="fade-left" data-aos-duration="1000">
-                <div class="img-wrapper">
-                    <img src="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1768858970/WhatsApp_Image_2025-09-01_at_21.23.35_92b9ad76_exrgcp.jpg" alt="Abdullah Ahmed" />
-                    <div class="img-glow"></div>
-                </div>
+            <div class="floating-card card-2" aria-hidden="true">
+              <i class="fab fa-tiktok"></i>
+              <span>TikTok</span>
             </div>
+            <div class="floating-card card-3" aria-hidden="true">
+              <i class="fab fa-youtube"></i>
+              <span>Shorts</span>
+            </div>
+            <img
+              src="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1780530199/702829367_18269276959291850_6679646237923863597_n_hdzw8l.jpg"
+              alt="Abdullah Ahmed - مونتير فيديوهات محترف"
+              class="hero-image"
+              loading="eager"
+              width="380"
+              height="380"
+            />
+          </div>
         </div>
+      </div>
+
+      <div class="scroll-indicator" aria-hidden="true">
+        <span>اسحب للأسفل</span>
+        <div class="scroll-mouse">
+          <div class="scroll-wheel"></div>
+        </div>
+      </div>
     </section>
 
-    <!-- Portfolio -->
-    <section class="portfolio" id="portfolio">
-        <div class="container">
-            <h2 class="heading" data-aos="fade-up">
-                <span class="section-number">01</span>
-                أعمالي - <span class="gradient-text">Reels المعدلة</span>
-            </h2>
-
-            <div class="portfolio-content">
-                <!-- غيّر الروابط والعناوين والأوصاف حسب شغلك الفعلي -->
-                <div class="video-row" data-aos="fade-up" data-aos-delay="100">
-                    <div class="video-container">
-                        <iframe src="https://www.youtube.com/embed/aY1pQbV9vnk" loading="lazy" allowfullscreen title="Reel - مثال 1"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reel - مثال 1</h3>
-                        <p>Hook قوي + موشن جرافيك + ترجمات جذابة + موسيقى تريند</p>
-                        <div class="video-tags">
-                            <span class="tag">موشن جرافيك</span>
-                            <span class="tag">ترجمات</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video-row" data-aos="fade-up" data-aos-delay="200">
-                    <div class="video-container">
-                        <iframe src="https://youtube.com/embed/2zZlqrjOe8g" loading="lazy" allowfullscreen title="Reel - مثال 2"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reel - مثال 2</h3>
-                        <p>تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة</p>
-                        <div class="video-tags">
-                            <span class="tag">تصحيح ألوان</span>
-                            <span class="tag">تأثيرات</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-row" data-aos="fade-up" data-aos-delay="200">
-                    <div class="video-container">
-                        <iframe src="https://youtube.com/embed/y04gR4VERV0" loading="lazy" allowfullscreen title="Reel - مثال 2"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reel - مثال 3</h3>
-                        <p>تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة</p>
-                        <div class="video-tags">
-                            <span class="tag">تصحيح ألوان</span>
-                            <span class="tag">تأثيرات</span>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="video-row" data-aos="fade-up" data-aos-delay="300">
-                    <div class="video-container">
-                        <iframe src="https://youtube.com/embed/mLpMI7qb9Ec" loading="lazy" allowfullscreen title="Reel - مثال 3"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reel - مثال 4</h3>
-                        <p>ستوري تيلينج + نصوص متحركة + إيقاع سريع يناسب التريند</p>
-                        <div class="video-tags">
-                            <span class="tag">نصوص متحركة</span>
-                            <span class="tag">ستوري تيلينج</span>
-                        </div>
-                    </div>
-                </div>
-                <div class="video-row" data-aos="fade-up" data-aos-delay="300">
-                    <div class="video-container">
-                        <iframe src="https://youtube.com/embed/FtHYgYlyvJA" loading="lazy" allowfullscreen title="Reel - مثال 3"></iframe>
-                    </div>
-                    <div class="video-info">
-                        <h3>Reel - مثال 5</h3>
-                        <p>ستوري تيلينج + نصوص متحركة + إيقاع سريع يناسب التريند</p>
-                        <div class="video-tags">
-                            <span class="tag">نصوص متحركة</span>
-                            <span class="tag">ستوري تيلينج</span>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- أضف هنا المزيد من <div class="video-row"> ... </div> حسب عدد الريلز -->
+    <!-- ============ STATS SECTION ============ -->
+    <section class="stats" id="stats" aria-label="الإحصائيات">
+      <div class="container">
+        <div class="stats-grid">
+          <div class="stat-card" data-aos="fade-up">
+            <div class="stat-icon" aria-hidden="true">
+              <i class="fas fa-film"></i>
             </div>
+            <div class="stat-number" data-count="150">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">فيديو تم تعديله</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="stat-icon" aria-hidden="true">
+              <i class="fas fa-users"></i>
+            </div>
+            <div class="stat-number" data-count="50">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">عميل سعيد</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="stat-icon" aria-hidden="true">
+              <i class="fas fa-eye"></i>
+            </div>
+            <div class="stat-number" data-count="10">0</div>
+            <div class="stat-plus">M+</div>
+            <div class="stat-label">مشاهدة إجمالية</div>
+          </div>
+
+          <div class="stat-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="stat-icon" aria-hidden="true">
+              <i class="fas fa-award"></i>
+            </div>
+            <div class="stat-number" data-count="3">0</div>
+            <div class="stat-plus">+</div>
+            <div class="stat-label">سنوات خبرة</div>
+          </div>
         </div>
+      </div>
     </section>
 
-    <!-- Contact -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2 class="contact-heading" data-aos="fade-up">
-                <span class="section-number">02</span>
-                تواصل معي لتعديل <span class="gradient-text">ريلزك القادم</span>
-            </h2>
-
-            <form action="https://formspree.io/f/mvgpadpv" method="POST" class="contact-form" data-aos="fade-up" data-aos-delay="200">
-                <div class="form-group" data-aos="fade-up" data-aos-delay="300">
-                    <input type="text" name="name" placeholder="الاسم" required />
-                    <i class="bx bx-user"></i>
-                </div>
-                <div class="form-group" data-aos="fade-up" data-aos-delay="400">
-                    <input type="email" name="email" placeholder="البريد الإلكتروني" required />
-                    <i class="bx bx-envelope"></i>
-                </div>
-                <div class="form-group" data-aos="fade-up" data-aos-delay="500">
-                    <textarea name="message" placeholder="اكتب تفاصيل المطلوب (نوع الريلز - المدة - التريند المطلوب - أي ملاحظات)" rows="6" required></textarea>
-                    <i class="bx bx-message-dots"></i>
-                </div>
-                <button type="submit" class="submit-btn" data-aos="fade-up" data-aos-delay="600">
-                    <span>إرسال الطلب</span>
-                    <i class="bx bx-send"></i>
-                </button>
-            </form>
+    <!-- ============ ABOUT SECTION ============ -->
+    <section class="about" id="about" aria-label="من أنا">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">تعرف عليّ</span>
+          <h2 class="section-title">
+            من <span class="gradient-text">أنا؟</span>
+          </h2>
+          <p class="section-subtitle">
+            شغف بالتفاصيل يحول الأفكار إلى محتوى بصري لا يُنسى
+          </p>
         </div>
+
+        <div class="about-grid">
+          <div class="about-content" data-aos="fade-left">
+            <h3 class="about-title">مونتير فيديوهات ريلز محترف</h3>
+            <p class="about-text">
+              أنا <strong>عبدالله أحمد</strong>، مونتير فيديوهات متخصص في صناعة
+              المحتوى القصير (Reels, Shorts, TikTok). أمتلك خبرة تزيد عن 3 سنوات
+              في تحويل الأفكار العادية إلى فيديوهات جذابة تحقق ملايين المشاهدات.
+            </p>
+            <p class="about-text">
+              أركز على <span class="highlight">أول 3 ثوانٍ</span> لأنها المفتاح
+              لجذب الانتباه، وأستخدم أحدث تقنيات الموشن جرافيك، تصحيح الألوان
+              السينمائي، والمؤثرات الصوتية لخلق تجربة مشاهدة لا تُنسى.
+            </p>
+
+            <div class="about-features">
+              <div class="feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>Hooks قوية تجذب الانتباه</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>موشن جرافيك احترافي</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>تصحيح ألوان سينمائي</span>
+              </div>
+              <div class="feature">
+                <i class="fas fa-check-circle" aria-hidden="true"></i>
+                <span>تسليم سريع ودقيق</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-tools" data-aos="fade-right">
+            <h4 class="tools-title">البرامج التي أستخدمها</h4>
+            <div class="tools-grid">
+              <div class="tool-card">
+                <div class="tool-icon premiere" aria-hidden="true">
+                  <span>Pr</span>
+                </div>
+                <span class="tool-name">Premiere Pro</span>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon aftereffects" aria-hidden="true">
+                  <span>Ae</span>
+                </div>
+                <span class="tool-name">After Effects</span>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon photoshop" aria-hidden="true">
+                  <span>Ps</span>
+                </div>
+                <span class="tool-name">Photoshop</span>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon capcut" aria-hidden="true">
+                  <span>CC</span>
+                </div>
+                <span class="tool-name">CapCut Pro</span>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon davinci" aria-hidden="true">
+                  <span>Dv</span>
+                </div>
+                <span class="tool-name">DaVinci Resolve</span>
+              </div>
+              <div class="tool-card">
+                <div class="tool-icon audition" aria-hidden="true">
+                  <span>Au</span>
+                </div>
+                <span class="tool-name">Audition</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
-    <!-- Footer -->
-    <footer>
-        <p>© 2025 - عبدالله أحمد | مونتير ريلز وشورتس محترف - جميع الحقوق محفوظة</p>
+    <!-- ============ SERVICES SECTION ============ -->
+    <section class="services" id="services" aria-label="الخدمات">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">ماذا أقدم؟</span>
+          <h2 class="section-title">
+            خدماتي <span class="gradient-text">الاحترافية</span>
+          </h2>
+          <p class="section-subtitle">
+            حلول متكاملة لصناعة محتوى فيديو يحقق نتائج حقيقية
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-number" aria-hidden="true">01</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 class="service-title">مونتاج ريلز احترافي</h3>
+            <p class="service-desc">
+              تعديل فيديوهات الريلز مع Hooks قوية، موشن جرافيك، ترجمات جذابة،
+              وموسيقى تريند.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> Hook في أول 3
+                ثوانٍ
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> موشن جرافيك
+                متقدم
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> ترجمات ديناميكية
+              </li>
+            </ul>
+          </div>
+
+          <div
+            class="service-card featured"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
+            <div class="featured-badge">الأكثر طلباً</div>
+            <div class="service-number" aria-hidden="true">02</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-film"></i>
+            </div>
+            <h3 class="service-title">يوتيوب شورتس</h3>
+            <p class="service-desc">
+              إنتاج شورتس احترافية تحقق ملايين المشاهدات مع تحسين SEO وCTR.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check" aria-hidden="true"></i> تحسين CTR</li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> Thumbnail
+                احترافي
+              </li>
+              <li><i class="fas fa-check" aria-hidden="true"></i> SEO متقدم</li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-number" aria-hidden="true">03</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-bolt"></i>
+            </div>
+            <h3 class="service-title">فيديوهات تيك توك</h3>
+            <p class="service-desc">
+              صناعة محتوى تيك توك تريندي بإيقاع سريع ومؤثرات صوتية جذابة.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> إيقاع سريع
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> مؤثرات صوتية
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> محتوى تريندي
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up">
+            <div class="service-number" aria-hidden="true">04</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-palette"></i>
+            </div>
+            <h3 class="service-title">تصحيح ألوان سينمائي</h3>
+            <p class="service-desc">
+              Color Grading احترافي يعطي فيديوهاتك طابعاً سينمائياً مميزاً.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> Color Grading
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> LUTs مخصصة
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> طابع سينمائي
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="service-number" aria-hidden="true">05</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-closed-captioning"></i>
+            </div>
+            <h3 class="service-title">ترجمات ونصوص متحركة</h3>
+            <p class="service-desc">
+              إضافة ترجمات احترافية ونصوص متحركة بأساليب متنوعة وجذابة.
+            </p>
+            <ul class="service-features">
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> ترجمات ديناميكية
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> نصوص متحركة
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> أساليب متعددة
+              </li>
+            </ul>
+          </div>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-number" aria-hidden="true">06</div>
+            <div class="service-icon" aria-hidden="true">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <h3 class="service-title">فيديوهات إعلانية</h3>
+            <p class="service-desc">
+              إنتاج فيديوهات إعلانية قصيرة تحقق مبيعات وتزيد الوعي بالعلامة
+              التجارية.
+            </p>
+            <ul class="service-features">
+              <li><i class="fas fa-check" aria-hidden="true"></i> CTA قوي</li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> Storytelling
+              </li>
+              <li>
+                <i class="fas fa-check" aria-hidden="true"></i> نتائج قابلة
+                للقياس
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PORTFOLIO SECTION (بدون فلاتر) ============ -->
+    <section class="portfolio" id="portfolio" aria-label="معرض الأعمال">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">معرض الأعمال</span>
+          <h2 class="section-title">
+            أحدث <span class="gradient-text">أعمالي</span>
+          </h2>
+          <p class="section-subtitle">نماذج حقيقية من مشاريعي السابقة</p>
+        </div>
+
+        <!-- تم حذف الفلاتر - كل الأعمال تظهر مباشرة -->
+        <div class="portfolio-grid" id="portfolio-grid">
+          <!-- سيتم ملء المشاريع من config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ PROCESS SECTION ============ -->
+    <section class="process" id="process" aria-label="آلية العمل">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">كيف أعمل؟</span>
+          <h2 class="section-title">
+            آلية <span class="gradient-text">العمل</span>
+          </h2>
+          <p class="section-subtitle">
+            4 خطوات بسيطة من الفكرة إلى الفيديو النهائي
+          </p>
+        </div>
+
+        <div class="process-grid">
+          <div class="process-card" data-aos="fade-up">
+            <div class="process-number" aria-hidden="true">01</div>
+            <div class="process-icon" aria-hidden="true">
+              <i class="fas fa-comments"></i>
+            </div>
+            <h3 class="process-title">الاستشارة</h3>
+            <p class="process-desc">
+              نناقش فكرتك، أهدافك، والجمهور المستهدف لنضع خطة واضحة للمشروع.
+            </p>
+          </div>
+
+          <div class="process-line" data-aos="fade-up" aria-hidden="true"></div>
+
+          <div class="process-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="process-number" aria-hidden="true">02</div>
+            <div class="process-icon" aria-hidden="true">
+              <i class="fas fa-paperclip"></i>
+            </div>
+            <h3 class="process-title">استلام المواد</h3>
+            <p class="process-desc">
+              ترسل لي الفيديوهات الخام، النصوص، وأي مواد إضافية يحتاجها المشروع.
+            </p>
+          </div>
+
+          <div
+            class="process-line"
+            data-aos="fade-up"
+            data-aos-delay="100"
+            aria-hidden="true"
+          ></div>
+
+          <div class="process-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="process-number" aria-hidden="true">03</div>
+            <div class="process-icon" aria-hidden="true">
+              <i class="fas fa-magic"></i>
+            </div>
+            <h3 class="process-title">المونتاج</h3>
+            <p class="process-desc">
+              أبدأ في تحويل المواد إلى فيديو احترافي مع Hooks، موشن، وتصحيح
+              ألوان.
+            </p>
+          </div>
+
+          <div
+            class="process-line"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            aria-hidden="true"
+          ></div>
+
+          <div class="process-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="process-number" aria-hidden="true">04</div>
+            <div class="process-icon" aria-hidden="true">
+              <i class="fas fa-rocket"></i>
+            </div>
+            <h3 class="process-title">التسليم</h3>
+            <p class="process-desc">
+              أرسل لك الفيديو النهائي بصيغ مناسبة لكل منصة مع تعديلات مجانية.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS SECTION (بدون خمسات/فايفر) ============ -->
+    <section class="testimonials" id="testimonials" aria-label="آراء العملاء">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">آراء العملاء</span>
+          <h2 class="section-title">
+            ماذا يقول <span class="gradient-text">عملائي؟</span>
+          </h2>
+          <p class="section-subtitle">تقييمات حقيقية من عملاء سابقين</p>
+        </div>
+
+        <div class="testimonials-grid">
+          <div class="testimonial-card" data-aos="fade-up">
+            <div class="testimonial-screenshot">
+              <img
+                src="https://res.cloudinary.com/dlcwlgs9i/image/upload/c_crop,g_north_west,h_370,w_907,y_62/1_hbdurn.png"
+                alt="تقييم عميل - مثال 1"
+                loading="lazy"
+                width="907"
+                height="370"
+              />
+              <div class="screenshot-overlay" aria-hidden="true">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <div class="testimonial-rating" aria-label="تقييم 5 من 5 نجوم">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <span class="rating-text">5.0</span>
+            </div>
+            <p class="testimonial-text">
+              "شغل فوق الممتاز! الريلز حققت أكثر من 500 ألف مشاهدة في أسبوع"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">أ</div>
+              <div class="author-info">
+                <h4>أحمد محمد</h4>
+                <span>صاحب علامة تجارية</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="testimonial-screenshot">
+              <img
+                src="https://res.cloudinary.com/dlcwlgs9i/image/upload/c_crop,g_north_west,h_334,w_712,x_17,y_18/nhhh_myji7w.png"
+                alt="تقييم عميل - مثال 2"
+                loading="lazy"
+                width="712"
+                height="334"
+              />
+              <div class="screenshot-overlay" aria-hidden="true">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <div class="testimonial-rating" aria-label="تقييم 5 من 5 نجوم">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <span class="rating-text">5.0</span>
+            </div>
+            <p class="testimonial-text">
+              "Best video editor I've worked with! Delivered on time with
+              amazing quality."
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">J</div>
+              <div class="author-info">
+                <h4>John Smith</h4>
+                <span>Content Creator - USA</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="testimonial-screenshot">
+              <img
+                src="https://res.cloudinary.com/dlcwlgs9i/image/upload/v1781949413/2_fjzlku.png"
+                alt="تقييم عميل - مثال 3"
+                loading="lazy"
+                width="907"
+                height="370"
+              />
+              <div class="screenshot-overlay" aria-hidden="true">
+                <i class="fas fa-search-plus"></i>
+              </div>
+            </div>
+            <div class="testimonial-rating" aria-label="تقييم 5 من 5 نجوم">
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <span class="rating-text">5.0</span>
+            </div>
+            <p class="testimonial-text">
+              "تعاملت معه في أكثر من مشروع، دايماً تسليم في الموعد وجودة عالية"
+            </p>
+            <div class="testimonial-author">
+              <div class="author-avatar" aria-hidden="true">س</div>
+              <div class="author-info">
+                <h4>سارة علي</h4>
+                <span>مديرة تسويق</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT SECTION (بدون خمسات/فايفر) ============ -->
+    <section class="contact" id="contact" aria-label="تواصل معي">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <span class="section-tag">تواصل معي</span>
+          <h2 class="section-title">
+            لنبدأ <span class="gradient-text">مشروعك</span>
+          </h2>
+          <p class="section-subtitle">
+            عندك فكرة؟ خلينا نحولها لفيديو احترافي يحقق نتائج
+          </p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info" data-aos="fade-left">
+            <h3 class="contact-title">معلومات التواصل</h3>
+            <p class="contact-desc">
+              أنا متاح للمشاريع الجديدة. تواصل معي عبر أي من الطرق التالية:
+            </p>
+
+            <div class="contact-items">
+              <a href="mailto:your@email.com" class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i class="fas fa-envelope"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">البريد الإلكتروني</span>
+                  <span class="contact-value">your@email.com</span>
+                </div>
+              </a>
+
+              <a
+                href="https://wa.me/201000000000"
+                class="contact-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="contact-icon whatsapp" aria-hidden="true">
+                  <i class="fab fa-whatsapp"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">واتساب</span>
+                  <span class="contact-value">+20 100 000 0000</span>
+                </div>
+              </a>
+
+              <a
+                href="https://instagram.com/yourusername"
+                class="contact-item"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <div class="contact-icon instagram" aria-hidden="true">
+                  <i class="fab fa-instagram"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">إنستغرام</span>
+                  <span class="contact-value">@yourusername</span>
+                </div>
+              </a>
+
+              <div class="contact-item">
+                <div class="contact-icon" aria-hidden="true">
+                  <i class="fas fa-clock"></i>
+                </div>
+                <div class="contact-details">
+                  <span class="contact-label">وقت الاستجابة</span>
+                  <span class="contact-value">خلال 24 ساعة</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <form
+            class="contact-form"
+            data-aos="fade-right"
+            action="https://formspree.io/f/your-form-id"
+            method="POST"
+            novalidate
+          >
+            <div class="form-row">
+              <div class="form-group">
+                <label for="name">الاسم</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="اسمك الكامل"
+                  required
+                  autocomplete="name"
+                />
+                <i class="fas fa-user" aria-hidden="true"></i>
+              </div>
+
+              <div class="form-group">
+                <label for="email">البريد الإلكتروني</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="email@example.com"
+                  required
+                  autocomplete="email"
+                />
+                <i class="fas fa-envelope" aria-hidden="true"></i>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="service">نوع الخدمة</label>
+              <select id="service" name="service" required>
+                <option value="">اختر الخدمة</option>
+                <option value="reels">مونتاج ريلز</option>
+                <option value="shorts">يوتيوب شورتس</option>
+                <option value="tiktok">فيديوهات تيك توك</option>
+                <option value="ads">فيديوهات إعلانية</option>
+                <option value="other">أخرى</option>
+              </select>
+              <i class="fas fa-list" aria-hidden="true"></i>
+            </div>
+
+            <div class="form-group">
+              <label for="message">تفاصيل المشروع</label>
+              <textarea
+                id="message"
+                name="message"
+                placeholder="احكيلي عن مشروعك، عدد الفيديوهات، والمدة المطلوبة..."
+                rows="5"
+                required
+              ></textarea>
+              <i class="fas fa-comment" aria-hidden="true"></i>
+            </div>
+
+            <button type="submit" class="submit-btn">
+              <span>إرسال الرسالة</span>
+              <i class="fas fa-paper-plane" aria-hidden="true"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-brand">
+            <a href="#home" class="logo">
+              <span class="logo-icon">🎬</span>
+              <span class="logo-text"
+                >Abdullah<span class="logo-dot">.</span></span
+              >
+            </a>
+            <p class="footer-desc">
+              مونتير فيديوهات ريلز محترف، أحوّل أفكارك إلى محتوى بصري يحقق
+              نتائج.
+            </p>
+          </div>
+
+          <div class="footer-links">
+            <h4>روابط سريعة</h4>
+            <ul>
+              <li><a href="#home">الرئيسية</a></li>
+              <li><a href="#about">من أنا</a></li>
+              <li><a href="#portfolio">أعمالي</a></li>
+              <li><a href="#contact">تواصل معي</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-links">
+            <h4>الخدمات</h4>
+            <ul>
+              <li><a href="#services">مونتاج ريلز</a></li>
+              <li><a href="#services">يوتيوب شورتس</a></li>
+              <li><a href="#services">فيديوهات تيك توك</a></li>
+              <li><a href="#services">فيديوهات إعلانية</a></li>
+            </ul>
+          </div>
+
+          <div class="footer-social">
+            <h4>تابعني</h4>
+            <div class="social-links">
+              <a href="#" aria-label="Instagram"
+                ><i class="fab fa-instagram" aria-hidden="true"></i
+              ></a>
+              <a href="#" aria-label="TikTok"
+                ><i class="fab fa-tiktok" aria-hidden="true"></i
+              ></a>
+              <a href="#" aria-label="YouTube"
+                ><i class="fab fa-youtube" aria-hidden="true"></i
+              ></a>
+              <a href="#" aria-label="WhatsApp"
+                ><i class="fab fa-whatsapp" aria-hidden="true"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="footer-bottom">
+          <p>© 2026 Abdullah Ahmed | جميع الحقوق محفوظة</p>
+          <p>
+            صُنع بـ
+            <i
+              class="fas fa-heart"
+              style="color: #ec4899"
+              aria-hidden="true"
+            ></i>
+            للمبدعين
+          </p>
+        </div>
+      </div>
     </footer>
 
-    <!-- Scripts -->
-    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="script.js"></script>
-</body>
+    <!-- Back to Top -->
+    <button class="back-to-top" id="back-to-top" aria-label="العودة للأعلى">
+      <i class="fas fa-arrow-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Scripts (deferred for performance) -->
+    <script src="https://unpkg.com/aos@next/dist/aos.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+    <script src="config.js" defer></script>
+    <script src="script.js" defer></script>
+  </body>
 </html>
