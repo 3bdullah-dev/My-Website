@@ -38,6 +38,69 @@
   --font: "Cairo", "Tajawal", sans-serif;
 }
 
+/* ============ LOADING SCREEN ============ */
+.loading-screen {
+  position: fixed;
+  inset: 0;
+  background: var(--bg-dark);
+  z-index: 99999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: opacity 0.5s ease, visibility 0.5s;
+}
+
+.loading-screen.hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-content {
+  text-align: center;
+}
+
+.loading-logo {
+  font-size: 4rem;
+  animation: logoPulse 1.5s ease-in-out infinite;
+}
+
+@keyframes logoPulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.loading-text {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-top: 1rem;
+  background: var(--grad-full);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.loading-bar {
+  width: 200px;
+  height: 3px;
+  background: var(--bg-tertiary);
+  border-radius: 3px;
+  margin: 1.5rem auto 0;
+  overflow: hidden;
+}
+
+.loading-progress {
+  height: 100%;
+  background: var(--grad-full);
+  border-radius: 3px;
+  animation: loadingProgress 1.5s ease-in-out infinite;
+}
+
+@keyframes loadingProgress {
+  0% { width: 0; }
+  50% { width: 70%; }
+  100% { width: 100%; }
+}
+
 /* ✅ إصلاح السكرول والهوامش */
 html {
   scroll-behavior: smooth;
