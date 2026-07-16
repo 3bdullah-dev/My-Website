@@ -2026,6 +2026,11 @@ header.scrolled {
   .hero-name {
     font-size: 2.5rem;
   }
+
+  .loading-logo { font-size: 3rem; }
+.loading-text { font-size: 1.2rem; }
+.loading-bar { width: 150px; }
+  
   .hero-image-wrapper {
     width: 280px;
     height: 280px;
