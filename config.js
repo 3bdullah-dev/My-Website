@@ -41,6 +41,14 @@ const siteConfig = {
       thumbnail: "https://img.youtube.com/vi/mLpMI7qb9Ec/maxresdefault.jpg",
       tags: ["تريند", "مؤثرات"],
     },
+    {
+      id: 5,
+      title: "YouTube Short — Storytelling",
+      description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
+      videoId: "YYXh0LcqAIk",
+      thumbnail: "https://img.youtube.com/vi/2zZlqrjOe8g/maxresdefault.jpg",
+      tags: ["نصوص متحركة", "ستوري تيلينج"],
+    },
   ],
 };
 
