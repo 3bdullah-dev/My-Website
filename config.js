@@ -18,7 +18,7 @@ const siteConfig = {
       tags: ["موشن جرافيك", "ترجمات"],
     },
     {
-      id: 2,
+      id: 5,
       title: "Reel — تصحيح ألوان سينمائي",
       description: "تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة",
       videoId: "aY1pQbV9vnk",
@@ -26,7 +26,7 @@ const siteConfig = {
       tags: ["تصحيح ألوان", "تأثيرات"],
     },
     {
-      id: 3,
+      id: 4,
       title: "YouTube Short — Storytelling",
       description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
       videoId: "2zZlqrjOe8g",
@@ -34,7 +34,15 @@ const siteConfig = {
       tags: ["نصوص متحركة", "ستوري تيلينج"],
     },
     {
-      id: 4,
+      id: 3,
+      title: "TikTok — تريند سريع",
+      description: "محتوى تريندي بإيقاع سريع ومؤثرات صوتية",
+      videoId: "nyYBwnYf3sg",
+      thumbnail: "https://img.youtube.com/vi/nyYBwnYf3sg/maxresdefault.jpg",
+      tags: ["تريند", "مؤثرات"],
+    },
+    {
+      id: 6,
       title: "TikTok — تريند سريع",
       description: "محتوى تريندي بإيقاع سريع ومؤثرات صوتية",
       videoId: "mLpMI7qb9Ec",
@@ -42,11 +50,11 @@ const siteConfig = {
       tags: ["تريند", "مؤثرات"],
     },
     {
-      id: 5,
+      id: 2,
       title: "YouTube Short — Storytelling",
       description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
       videoId: "YYXh0LcqAIk",
-      thumbnail: "https://img.youtube.com/vi/2zZlqrjOe8g/maxresdefault.jpg",
+      thumbnail: "https://img.youtube.com/vi/YYXh0LcqAIk/maxresdefault.jpg",
       tags: ["نصوص متحركة", "ستوري تيلينج"],
     },
   ],
