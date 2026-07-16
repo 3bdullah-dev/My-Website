@@ -11,6 +11,20 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 });
 
+// ============ LOADING SCREEN ============
+window.addEventListener("load", () => {
+  const loadingScreen = document.getElementById("loading-screen");
+  if (loadingScreen) {
+    setTimeout(() => {
+      loadingScreen.classList.add("hidden");
+      document.body.style.overflow = "";
+    }, 1500);
+  }
+});
+
+// منع السكرول أثناء التحميل
+document.body.style.overflow = "hidden";
+
 // ============ SCROLL EVENTS (throttled) ============
 const scrollProgress = document.getElementById("scroll-progress");
 const header = document.getElementById("header");
