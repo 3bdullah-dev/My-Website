@@ -17,20 +17,13 @@ const siteConfig = {
       thumbnail: "https://img.youtube.com/vi/L956zYHjPMs/maxresdefault.jpg",
       tags: ["موشن جرافيك", "ترجمات"],
     },
+
     {
-      id: 5,
-      title: "Reel — تصحيح ألوان سينمائي",
-      description: "تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة",
-      videoId: "aY1pQbV9vnk",
-      thumbnail: "https://img.youtube.com/vi/aY1pQbV9vnk/maxresdefault.jpg",
-      tags: ["تصحيح ألوان", "تأثيرات"],
-    },
-    {
-      id: 4,
+      id: 2,
       title: "YouTube Short — Storytelling",
       description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
-      videoId: "2zZlqrjOe8g",
-      thumbnail: "https://img.youtube.com/vi/2zZlqrjOe8g/maxresdefault.jpg",
+      videoId: "YYXh0LcqAIk",
+      thumbnail: "https://img.youtube.com/vi/YYXh0LcqAIk/maxresdefault.jpg",
       tags: ["نصوص متحركة", "ستوري تيلينج"],
     },
     {
@@ -41,6 +34,25 @@ const siteConfig = {
       thumbnail: "https://img.youtube.com/vi/nyYBwnYf3sg/maxresdefault.jpg",
       tags: ["تريند", "مؤثرات"],
     },
+
+
+    {
+      id: 4,
+      title: "Reel — تصحيح ألوان سينمائي",
+      description: "تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة",
+      videoId: "aY1pQbV9vnk",
+      thumbnail: "https://img.youtube.com/vi/aY1pQbV9vnk/maxresdefault.jpg",
+      tags: ["تصحيح ألوان", "تأثيرات"],
+    },
+    {
+      id: 5,
+      title: "YouTube Short — Storytelling",
+      description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
+      videoId: "2zZlqrjOe8g",
+      thumbnail: "https://img.youtube.com/vi/2zZlqrjOe8g/maxresdefault.jpg",
+      tags: ["نصوص متحركة", "ستوري تيلينج"],
+    },
+
     {
       id: 6,
       title: "TikTok — تريند سريع",
@@ -49,14 +61,7 @@ const siteConfig = {
       thumbnail: "https://img.youtube.com/vi/mLpMI7qb9Ec/maxresdefault.jpg",
       tags: ["تريند", "مؤثرات"],
     },
-    {
-      id: 2,
-      title: "YouTube Short — Storytelling",
-      description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
-      videoId: "YYXh0LcqAIk",
-      thumbnail: "https://img.youtube.com/vi/YYXh0LcqAIk/maxresdefault.jpg",
-      tags: ["نصوص متحركة", "ستوري تيلينج"],
-    },
+
   ],
 };
 
