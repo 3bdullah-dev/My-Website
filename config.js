@@ -35,7 +35,6 @@ const siteConfig = {
       tags: ["تريند", "مؤثرات"],
     },
 
-
     {
       id: 4,
       title: "Reel — تصحيح ألوان سينمائي",
@@ -61,11 +60,10 @@ const siteConfig = {
       thumbnail: "https://img.youtube.com/vi/mLpMI7qb9Ec/maxresdefault.jpg",
       tags: ["تريند", "مؤثرات"],
     },
-
   ],
 };
 
-// ============ تحميل المشاريع مع Skeleton + Video Lightbox ============
+// ============ تحميل المشاريع مع Skeleton ============
 function loadProjects() {
   const grid = document.getElementById("portfolio-grid");
   if (!grid) return;
@@ -105,7 +103,7 @@ function loadProjects() {
     )
     .join("");
 
-  // استبدال الـ Skeleton بالكروت الحقيقية بعد delay قصير لإظهار الـ skeleton أولاً
+  // استبدال الـ Skeleton بالكروت الحقيقية بعد delay قصير
   setTimeout(() => {
     grid.innerHTML = cardsHTML;
     // إعادة تهيئة AOS للعناصر الجديدة
@@ -114,42 +112,30 @@ function loadProjects() {
   }, 600);
 }
 
-// ============ Video Lightbox Handlers ============
-function openVideoLightbox(videoId) {
-  const lightbox = document.getElementById("video-lightbox");
-  const frame = document.getElementById("video-lightbox-frame");
-  if (!lightbox || !frame) return;
+// ============ تشغيل الفيديو في الكارت مباشرة ============
+function activateVideo(placeholder) {
+  const container = placeholder.closest(".video-container");
+  if (!container) return;
 
-  frame.innerHTML = `<iframe
-    src="https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-    title="فيديو من أعمالي"></iframe>`;
+  const videoId = placeholder.dataset.videoId;
+  const iframe = document.createElement("iframe");
+  iframe.src = `https://www.youtube-nocookie.com/embed/${videoId}?autoplay=1&rel=0&modestbranding=1`;
+  iframe.allow =
+    "accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture";
+  iframe.allowFullscreen = true;
+  iframe.title = "فيديو من أعمالي";
 
-  lightbox.classList.add("active");
-  document.body.style.overflow = "hidden";
-}
+  container.replaceChild(iframe, placeholder);
 
-function closeVideoLightbox() {
-  const lightbox = document.getElementById("video-lightbox");
-  const frame = document.getElementById("video-lightbox-frame");
-  if (!lightbox) return;
-
-  lightbox.classList.remove("active");
-  document.body.style.overflow = "";
-
-  // إيقاف الفيديو بعد الـ animation
-  setTimeout(() => {
-    if (frame) frame.innerHTML = "";
-  }, 300);
+  // حفظ الـ container النشط لاستعادته لاحقاً
+  container.dataset.active = "true";
 }
 
 // ============ ربط الـ placeholders ============
 function bindAllPlaceholders() {
   document.querySelectorAll(".video-placeholder").forEach((placeholder) => {
     const handler = function () {
-      const videoId = this.dataset.videoId;
-      if (videoId) openVideoLightbox(videoId);
+      activateVideo(this);
     };
     placeholder.addEventListener("click", handler);
     placeholder.addEventListener("keydown", function (e) {
@@ -161,28 +147,7 @@ function bindAllPlaceholders() {
   });
 }
 
-// ============ Lightbox Close Handlers ============
+// ============ تهيئة المشاريع ============
 document.addEventListener("DOMContentLoaded", () => {
   loadProjects();
-
-  const videoClose = document.getElementById("video-close");
-  const videoLightbox = document.getElementById("video-lightbox");
-
-  if (videoClose) {
-    videoClose.addEventListener("click", closeVideoLightbox);
-  }
-  if (videoLightbox) {
-    videoLightbox.addEventListener("click", (e) => {
-      if (e.target === videoLightbox) closeVideoLightbox();
-    });
-  }
-  document.addEventListener("keydown", (e) => {
-    if (
-      e.key === "Escape" &&
-      videoLightbox &&
-      videoLightbox.classList.contains("active")
-    ) {
-      closeVideoLightbox();
-    }
-  });
 });
