@@ -81,33 +81,14 @@ if (menuIcon && navbar) {
   });
 }
 
-// ============ SMOOTH SCROLL — مُسرّع ✅ ============
-// Custom smooth scroll أسرع من السلوك الافتراضي
-function fastSmoothScroll(targetY, duration = 500) {
-  const startY = window.pageYOffset;
-  const diff = targetY - startY;
-  let startTime = null;
-
-  function step(currentTime) {
-    if (!startTime) startTime = currentTime;
-    const elapsed = currentTime - startTime;
-    const progress = Math.min(elapsed / duration, 1);
-    // easeOutCubic easing
-    const ease = 1 - Math.pow(1 - progress, 3);
-    window.scrollTo(0, startY + diff * ease);
-    if (elapsed < duration) requestAnimationFrame(step);
-  }
-  requestAnimationFrame(step);
-}
-
+// ============ SMOOTH SCROLL ============
 document.querySelectorAll('a[href^="#"]').forEach((a) => {
   a.addEventListener("click", function (e) {
     const target = document.querySelector(this.getAttribute("href"));
     if (target) {
       e.preventDefault();
       const hh = header ? header.offsetHeight : 80;
-      const targetY = target.offsetTop - hh;
-      fastSmoothScroll(targetY, 500); // ✅ 500ms بدل السلوك البطيء
+      window.scrollTo({ top: target.offsetTop - hh, behavior: "smooth" });
     }
   });
 });
@@ -138,7 +119,7 @@ const counterObs = new IntersectionObserver(
       if (!e.isIntersecting) return;
       const el = e.target;
       const target = parseInt(el.dataset.count);
-      const step = target / (1200 / 16); // ✅ أسرع: 1200ms بدل 1600ms
+      const step = target / (1600 / 16);
       let cur = 0;
       const tick = () => {
         cur += step;
@@ -158,11 +139,10 @@ const counterObs = new IntersectionObserver(
 document.querySelectorAll(".stat-number").forEach((c) => counterObs.observe(c));
 
 // ============ BACK TO TOP ============
-if (backToTop) {
-  backToTop.addEventListener("click", () => {
-    fastSmoothScroll(0, 600); // ✅ سكرول سريع للأعلى
-  });
-}
+if (backToTop)
+  backToTop.addEventListener("click", () =>
+    window.scrollTo({ top: 0, behavior: "smooth" }),
+  );
 
 // ============ PARALLAX (desktop only) ============
 if (window.innerWidth >= 768) {
@@ -189,7 +169,7 @@ if (window.innerWidth >= 768) {
   }
 }
 
-// ============ IMAGE LIGHTBOX ============
+// ============ IMAGE LIGHTBOX (للتقييمات فقط) ============
 (function () {
   const overlay = document.getElementById("lightbox-overlay");
   const imgEl = document.getElementById("lightbox-img");
