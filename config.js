@@ -4,13 +4,22 @@ const siteConfig = {
     name: "Abdullah Ahmed",
     nameAr: "عبدالله أحمد",
     tagline: "مونتير فيديوهات ريلز محترف",
-    email: "your@email.com",
+    email: "abdallahmohamed.up@gmail.com",
     whatsapp: "201000000000",
-    instagram: "yourusername",
+    instagram: "3bdallah.pk",
   },
   projects: [
     {
       id: 1,
+      title: "Reel — Hook قوي مع موشن جرافيك",
+      description: "Hook قوي + موشن جرافيك + ترجمات جذابة + موسيقى تريند",
+      videoId: "tKD5nnUhVEk",
+      thumbnail: "https://img.youtube.com/vi/tKD5nnUhVEk/maxresdefault.jpg",
+      tags: ["موشن جرافيك", "ترجمات"],
+    },
+
+        {
+      id: 2,
       title: "Reel — Hook قوي مع موشن جرافيك",
       description: "Hook قوي + موشن جرافيك + ترجمات جذابة + موسيقى تريند",
       videoId: "L956zYHjPMs",
@@ -19,7 +28,7 @@ const siteConfig = {
     },
 
     {
-      id: 2,
+      id: 3,
       title: "YouTube Short — Storytelling",
       description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
       videoId: "YYXh0LcqAIk",
@@ -27,7 +36,7 @@ const siteConfig = {
       tags: ["نصوص متحركة", "ستوري تيلينج"],
     },
     {
-      id: 3,
+      id: 4,
       title: "TikTok — تريند سريع",
       description: "محتوى تريندي بإيقاع سريع ومؤثرات صوتية",
       videoId: "nyYBwnYf3sg",
@@ -36,7 +45,7 @@ const siteConfig = {
     },
 
     {
-      id: 4,
+      id: 5,
       title: "Reel — تصحيح ألوان سينمائي",
       description: "تعديل سريع + تصحيح ألوان سينمائي + تأثيرات انتقال سلسة",
       videoId: "aY1pQbV9vnk",
@@ -44,7 +53,7 @@ const siteConfig = {
       tags: ["تصحيح ألوان", "تأثيرات"],
     },
     {
-      id: 5,
+      id: 6,
       title: "YouTube Short — Storytelling",
       description: "ستوري تيلينج + نصوص متحركة + إيقاع سريع",
       videoId: "2zZlqrjOe8g",
@@ -53,7 +62,7 @@ const siteConfig = {
     },
 
     {
-      id: 6,
+      id: 7,
       title: "TikTok — تريند سريع",
       description: "محتوى تريندي بإيقاع سريع ومؤثرات صوتية",
       videoId: "mLpMI7qb9Ec",
